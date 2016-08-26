@@ -4,7 +4,20 @@
   
     
     <entry>
-      <title><![CDATA[搜索与排序：Insertion and Selection Sort, and Binary Search]]></title>
+      <title><![CDATA[游戏评测：The Black Watchmen (黑色守望者）]]></title>
+      <url>http://www.firepanda.xyz/2016/08/26/TheBlackWatchmen/</url>
+      <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/image/TBW%20Start.jpg" alt=""><br>Steam好评率：88% （8/26/2016 4:57:48 PM）<br>作为一个全英文硬核解谜游戏，我觉得某种程度上它对英语为母语的玩家也不是那么友好<br> <a id="more"></a><br>The Black Watchmen是一款硬核解密类的独立游戏，其开发商Alice&amp;Smith目前正在EA另一款硬核解密类的游戏，同样也是对玩家超级不友好（难得要死）  </p>
+<p>不算上DLC，游戏本体总共有27个任务，分为8个部分。</p>
+<p><img src="http://och38adjw.bkt.clouddn.com/image/Dashboard.jpg" alt=""><br>和其他硬核解密游戏比如witness不同的是，这个游戏需要游戏以外的工具去完成任务，比如谷歌和维基百科。（开始游戏前，请确保自己能连得上谷歌，以百度和bing的搜索能力，估计要卡关好久）在不同任务中，不仅需要学习新的知识，比如化学、社会工程学、密码学、宗教等，还要会实际应用。比如，要从<a href="http://www.morphomedical.com/" target="_blank" rel="external">Morpho Medical</a>的在线咨询系统中套出情报（当然这家企业是虚构的，然而这网页太真了以至于我一直不敢点开他们的在线客服，怕被他们当傻逼）</p>
+<p>此外，观察力、耐心、逻辑推理能力等也是至关重要，能否从一系列报表上发现不合常理的地方，能否从老照片里面解读出暗号，能否快速将各种名字和特征与自己已有的知识去联系，或者是去推测自己不知道的点大概属于哪个方面的知识从而有的放矢。</p>
+<p><img src="http://och38adjw.bkt.clouddn.com/image/Global%20Map.jpg" alt=""></p>
+<p>最后，这个游戏也非常鼓励玩家间的合作，当有人陷入一个谜题的时候，他可以选择进行在线求助，有意愿帮助别人的玩家就会从接到游戏内，电子邮件甚至到电话的提醒。</p>
+<p>像个特工一样去解决那些秘密结社的家伙吧</p>
+]]></content>
+    </entry>
+    
+    <entry>
+      <title><![CDATA[搜索与排序：Insertion Sort, Selection Sort, and Binary Search]]></title>
       <url>http://www.firepanda.xyz/2016/08/26/SearchandSort/</url>
       <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/%E5%A4%8F%E5%B0%94.jpg" alt=""></p>
 <p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.<br> <a id="more"></a> </p>
