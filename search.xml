@@ -4,6 +4,67 @@
   
     
     <entry>
+      <title><![CDATA[搜索与排序：Insertion and Selection Sort, and Binary Search]]></title>
+      <url>http://www.firepanda.xyz/2016/08/26/SearchandSort/</url>
+      <content type="html"><![CDATA[<p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.</p>
+<h1 id="Selection-Sort"><a href="#Selection-Sort" class="headerlink" title="Selection Sort"></a>Selection Sort</h1><p>当我们有一组乱序数字的时候，举例说<br>When we have an array of random number, for example</p>
+<pre><code>450 604 100 802 301 200
+[0] [1] [2] [3] [4] [5]
+</code></pre><p>我们先找到最小的数字100,然后把它和[0]的数字交换位置<br>Let’s find the smallest number first, which is 100, and then <strong><em>swap</em></strong> it with number in [0].</p>
+<pre><code>100 | 604 450 802 301 200
+[0] | [1] [2] [3] [4] [5]
+</code></pre><p>这样左边是已经排序好的数列，右边是还没有排序好的，我们用竖线隔开<br>In this case, we have a sorted array on the left and an unsorted array on the right. We use a line to mark this.</p>
+<p>第二步，我们再从右边的数列里面找到最小的，和位置[1]的数字交换<br>Secondly, we find the minimum number from the array on the right and swap it with number in [1].</p>
+<pre><code>100 200 | 450 802 301 604
+[0] [1] | [2] [3] [4] [5]
+</code></pre><p>我们最后再不断重复这个步骤，直到全部整理完<br>Finally, we just repeat this step until there isn’t any element in the right array.</p>
+<pre><code>100 200 301 | 802 450 604
+[0] [1] [2] | [3] [4] [5]
+
+100 200 301 450 | 802 604
+[0] [1] [2] [3] | [4] [5]
+
+100 200 301 450 604 | 802
+[0] [1] [2] [3] [4] | [5]
+
+100 200 301 450 604 802 |
+[0] [1] [2] [3] [4] [5] |
+</code></pre><h1 id="Insertion-Sort"><a href="#Insertion-Sort" class="headerlink" title="Insertion Sort"></a>Insertion Sort</h1><p>这个方法里，我们把[0]位置的数字当作已经整理完的<br>In this method, we treat number in [0] as a sorted array</p>
+<pre><code>450 | 604 100 802 301 200
+[0] | [1] [2] [3] [4] [5]
+</code></pre><p>然后我们把[0]的数字和[1]的数字比较，[1]较小的话就插到[0]的前面<br>Then we compare numbers in [0] and in [1]. <strong><em>Insert</em></strong> the number in [1] if it is smaller</p>
+<pre><code>100 604 | 450 802 301 200
+[0] [1] | [2] [3] [4] [5]
+</code></pre><p>第二步，我们比较出450的正确位置，并插入<br>Secondly, we compare 450 with each number and insert it into the correct position</p>
+<pre><code>100 450 604 | 802 301 200
+[0] [1] [2] | [3] [4] [5]
+</code></pre><p>我们最后再不断重复这个步骤，直到全部整理完<br>Finally, we just repeat this step until there isn’t any element in the right array.</p>
+<pre><code>100 450 604 802 | 301 200
+[0] [1] [2] [3] | [4] [5]
+
+100 301 450 604 802 | 200
+[0] [1] [2] [3] [4] | [5]
+
+100 200 301 450 604 802 |
+[0] [1] [2] [3] [4] [5] |
+</code></pre><h1 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h1><p>一个完整的检索过程是先整理无序的信息再寻找目标，所以我们假设Binary Search处理的数列是一个已经从小到大排列好的数列，比如我们要从下列数列中找到500<br>In order to search an object, we need to sort the original array first. So we assume what binary search deal with is a sorted list. For example, we want to find 500 in following array,</p>
+<pre><code>100 200 300 400 500 600
+[0] [1] [2] [3] [4] [5]
+</code></pre><p>我们先把这个数列分成两半，然后比较第一部分最后一个数字.<br>We divide this array into two halves and compare 500 with the last element in the first half.</p>
+<pre><code>100 200 300 | 400 500 600
+[0] [1] [2] | [3] [4] [5]
+
+300&lt;500
+</code></pre><p>很显然，500在第二部分，重复之前那个步骤<br>Clearly, 500 is not in the first half, then we divide the second half into two parts and compare</p>
+<pre><code>100 200 300 |    400 500 | 600
+[0] [1] [2] |    [3] [4] | [5]
+
+500==500
+</code></pre><p>这样，我们就用了两次就找到了500，相比一个个比较的方法，显然要快很多。<br>That’s how we find 500 in the array. Obviously, it is faster then compare 500 with elements in the array one by one.</p>
+]]></content>
+    </entry>
+    
+    <entry>
       <title><![CDATA[Hello World]]></title>
       <url>http://www.firepanda.xyz/2016/08/25/hello-world/</url>
       <content type="html"><![CDATA[<p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>

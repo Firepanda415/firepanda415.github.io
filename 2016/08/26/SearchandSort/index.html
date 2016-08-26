@@ -68,7 +68,7 @@
 <link href="/css/main.css?v=5.0.1" rel="stylesheet" type="text/css" />
 
 
-  <meta name="keywords" content="Hexo, NexT" />
+  <meta name="keywords" content="Search,Sort," />
 
 
 
@@ -86,12 +86,16 @@
 
 
 
-<meta property="og:type" content="website">
-<meta property="og:title" content="Firepanda's Cave">
-<meta property="og:url" content="http://www.firepanda.xyz/tags/blog/index.html">
+<meta name="description" content="作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of s">
+<meta property="og:type" content="article">
+<meta property="og:title" content="搜索与排序：Insertion and Selection Sort, and Binary Search">
+<meta property="og:url" content="http://www.firepanda.xyz/2016/08/26/SearchandSort/index.html">
 <meta property="og:site_name" content="Firepanda's Cave">
+<meta property="og:description" content="作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of s">
+<meta property="og:updated_time" content="2016-08-26T06:51:47.285Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Firepanda's Cave">
+<meta name="twitter:title" content="搜索与排序：Insertion and Selection Sort, and Binary Search">
+<meta name="twitter:description" content="作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of s">
 
 
 
@@ -112,9 +116,9 @@
 
 
 
-  <link rel="canonical" href="http://www.firepanda.xyz/tags/blog/"/>
+  <link rel="canonical" href="http://www.firepanda.xyz/2016/08/26/SearchandSort/"/>
 
-  <title> Tag: blog | Firepanda's Cave </title>
+  <title> 搜索与排序：Insertion and Selection Sort, and Binary Search | Firepanda's Cave </title>
 </head>
 
 <body itemscope itemtype="http://schema.org/WebPage" lang="en">
@@ -154,7 +158,7 @@
     
   
 
-  <div class="container one-collumn sidebar-position-left  ">
+  <div class="container one-collumn sidebar-position-left page-post-detail ">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -275,46 +279,236 @@
           <div id="content" class="content">
             
 
-  <div id="posts" class="posts-collapse">
-    <div class="collection-title">
-      <h2 >
-        blog
-        <small>Tag</small>
-      </h2>
-    </div>
+  <div id="posts" class="posts-expand">
+    
+
+  
+  
+
+  
+  
+  
+
+  <article class="post post-type-normal " itemscope itemtype="http://schema.org/Article">
 
     
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+            
+            
+              
+                搜索与排序：Insertion and Selection Sort, and Binary Search
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+            <span class="post-meta-item-icon">
+              <i class="fa fa-calendar-o"></i>
+            </span>
+            <span class="post-meta-item-text">Posted on</span>
+            <time itemprop="dateCreated" datetime="2016-08-26T12:07:51+08:00" content="2016-08-26">
+              2016-08-26
+            </time>
+          </span>
+
+          
+            <span class="post-category" >
+              &nbsp; | &nbsp;
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">In</span>
+              
+                <span itemprop="about" itemscope itemtype="https://schema.org/Thing">
+                  <a href="/categories/CS/" itemprop="url" rel="index">
+                    <span itemprop="name">CS</span>
+                  </a>
+                </span>
+
+                
+                
+
+              
+            </span>
+          
+
+          
+            
+              <span class="post-comments-count">
+                &nbsp; | &nbsp;
+                <a href="/2016/08/26/SearchandSort/#comments" itemprop="discussionUrl">
+                  <span class="post-comments-count disqus-comment-count" data-disqus-identifier="2016/08/26/SearchandSort/" itemprop="commentsCount"></span>
+                </a>
+              </span>
+            
+          
+
+          
+
+          
+          
+             <span id="/2016/08/26/SearchandSort/" class="leancloud_visitors" data-flag-title="搜索与排序：Insertion and Selection Sort, and Binary Search">
+               &nbsp; | &nbsp;
+               <span class="post-meta-item-icon">
+                 <i class="fa fa-eye"></i>
+               </span>
+               <span class="post-meta-item-text">visitors </span>
+               <span class="leancloud-visitors-count"></span>
+              </span>
+          
+
+          
+        </div>
+      </header>
+    
+
+
+    <div class="post-body" itemprop="articleBody">
+
+      
       
 
-  <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-    <header class="post-header">
+      
+        <p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.</p>
+<h1 id="Selection-Sort"><a href="#Selection-Sort" class="headerlink" title="Selection Sort"></a>Selection Sort</h1><p>当我们有一组乱序数字的时候，举例说<br>When we have an array of random number, for example</p>
+<pre><code>450 604 100 802 301 200
+[0] [1] [2] [3] [4] [5]
+</code></pre><p>我们先找到最小的数字100,然后把它和[0]的数字交换位置<br>Let’s find the smallest number first, which is 100, and then <strong><em>swap</em></strong> it with number in [0].</p>
+<pre><code>100 | 604 450 802 301 200
+[0] | [1] [2] [3] [4] [5]
+</code></pre><p>这样左边是已经排序好的数列，右边是还没有排序好的，我们用竖线隔开<br>In this case, we have a sorted array on the left and an unsorted array on the right. We use a line to mark this.</p>
+<p>第二步，我们再从右边的数列里面找到最小的，和位置[1]的数字交换<br>Secondly, we find the minimum number from the array on the right and swap it with number in [1].</p>
+<pre><code>100 200 | 450 802 301 604
+[0] [1] | [2] [3] [4] [5]
+</code></pre><p>我们最后再不断重复这个步骤，直到全部整理完<br>Finally, we just repeat this step until there isn’t any element in the right array.</p>
+<pre><code>100 200 301 | 802 450 604
+[0] [1] [2] | [3] [4] [5]
 
-      <h1 class="post-title">
+100 200 301 450 | 802 604
+[0] [1] [2] [3] | [4] [5]
+
+100 200 301 450 604 | 802
+[0] [1] [2] [3] [4] | [5]
+
+100 200 301 450 604 802 |
+[0] [1] [2] [3] [4] [5] |
+</code></pre><h1 id="Insertion-Sort"><a href="#Insertion-Sort" class="headerlink" title="Insertion Sort"></a>Insertion Sort</h1><p>这个方法里，我们把[0]位置的数字当作已经整理完的<br>In this method, we treat number in [0] as a sorted array</p>
+<pre><code>450 | 604 100 802 301 200
+[0] | [1] [2] [3] [4] [5]
+</code></pre><p>然后我们把[0]的数字和[1]的数字比较，[1]较小的话就插到[0]的前面<br>Then we compare numbers in [0] and in [1]. <strong><em>Insert</em></strong> the number in [1] if it is smaller</p>
+<pre><code>100 604 | 450 802 301 200
+[0] [1] | [2] [3] [4] [5]
+</code></pre><p>第二步，我们比较出450的正确位置，并插入<br>Secondly, we compare 450 with each number and insert it into the correct position</p>
+<pre><code>100 450 604 | 802 301 200
+[0] [1] [2] | [3] [4] [5]
+</code></pre><p>我们最后再不断重复这个步骤，直到全部整理完<br>Finally, we just repeat this step until there isn’t any element in the right array.</p>
+<pre><code>100 450 604 802 | 301 200
+[0] [1] [2] [3] | [4] [5]
+
+100 301 450 604 802 | 200
+[0] [1] [2] [3] [4] | [5]
+
+100 200 301 450 604 802 |
+[0] [1] [2] [3] [4] [5] |
+</code></pre><h1 id="Binary-Search"><a href="#Binary-Search" class="headerlink" title="Binary Search"></a>Binary Search</h1><p>一个完整的检索过程是先整理无序的信息再寻找目标，所以我们假设Binary Search处理的数列是一个已经从小到大排列好的数列，比如我们要从下列数列中找到500<br>In order to search an object, we need to sort the original array first. So we assume what binary search deal with is a sorted list. For example, we want to find 500 in following array,</p>
+<pre><code>100 200 300 400 500 600
+[0] [1] [2] [3] [4] [5]
+</code></pre><p>我们先把这个数列分成两半，然后比较第一部分最后一个数字.<br>We divide this array into two halves and compare 500 with the last element in the first half.</p>
+<pre><code>100 200 300 | 400 500 600
+[0] [1] [2] | [3] [4] [5]
+
+300&lt;500
+</code></pre><p>很显然，500在第二部分，重复之前那个步骤<br>Clearly, 500 is not in the first half, then we divide the second half into two parts and compare</p>
+<pre><code>100 200 300 |    400 500 | 600
+[0] [1] [2] |    [3] [4] | [5]
+
+500==500
+</code></pre><p>这样，我们就用了两次就找到了500，相比一个个比较的方法，显然要快很多。<br>That’s how we find 500 in the array. Obviously, it is faster then compare 500 with elements in the array one by one.</p>
+
+      
+    </div>
+
+    <div>
+      
         
-            <a class="post-title-link" href="/2016/08/26/my-new-post/" itemprop="url">
-              
-                <span itemprop="name">Finally...</span>
-              
-            </a>
+
+      
+    </div>
+
+    <div>
+      
         
-      </h1>
 
-      <div class="post-meta">
-        <time class="post-time" itemprop="dateCreated"
-              datetime="2016-08-26T00:55:02+08:00"
-              content="2016-08-26" >
-          08-26
-        </time>
-      </div>
+      
+    </div>
 
-    </header>
+    <footer class="post-footer">
+      
+        <div class="post-tags">
+          
+            <a href="/tags/Search/" rel="tag">#Search</a>
+          
+            <a href="/tags/Sort/" rel="tag">#Sort</a>
+          
+        </div>
+      
+
+      
+        <div class="post-nav">
+          <div class="post-nav-next post-nav-item">
+            
+              <a href="/2016/08/25/hello-world/" rel="next" title="Hello World">
+                <i class="fa fa-chevron-left"></i> Hello World
+              </a>
+            
+          </div>
+
+          <div class="post-nav-prev post-nav-item">
+            
+          </div>
+        </div>
+      
+
+      
+      
+    </footer>
   </article>
 
 
-    
-  </div>
 
-  
+    <div class="post-spread">
+      
+        <!-- JiaThis Button BEGIN -->
+<div class="jiathis_style">
+  <a class="jiathis_button_tsina"></a>
+  <a class="jiathis_button_tqq"></a>
+  <a class="jiathis_button_weixin"></a>
+  <a class="jiathis_button_cqq"></a>
+  <a class="jiathis_button_douban"></a>
+  <a class="jiathis_button_renren"></a>
+  <a class="jiathis_button_qzone"></a>
+  <a class="jiathis_button_kaixin001"></a>
+  <a class="jiathis_button_copy"></a>
+  <a href="http://www.jiathis.com/share" class="jiathis jiathis_txt jiathis_separator jtico jtico_jiathis" target="_blank"></a>
+  <a class="jiathis_counter_style"></a>
+</div>
+<script type="text/javascript" >
+  var jiathis_config={
+    hideMore:false
+  }
+</script>
+<script type="text/javascript" src="http://v3.jiathis.com/code/jia.js" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+      
+    </div>
+  </div>
 
 
           </div>
@@ -322,6 +516,17 @@
 
 
           
+  <div class="comments" id="comments">
+    
+      <div id="disqus_thread">
+        <noscript>
+          Please enable JavaScript to view the
+          <a href="//disqus.com/?ref_noscript">comments powered by Disqus.</a>
+        </noscript>
+      </div>
+    
+  </div>
+
 
         </div>
         
@@ -341,8 +546,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap" >
+            Table of Contents
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview">
+            Overview
+          </li>
+        </ul>
+      
 
-      <section class="site-overview sidebar-panel  sidebar-panel-active ">
+      <section class="site-overview sidebar-panel ">
         <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
           <img class="site-author-image" itemprop="image"
                src="http://och38adjw.bkt.clouddn.com/%E7%8C%A5%E7%90%90%E7%8C%AB.jpg"
@@ -359,11 +573,18 @@
           </div>
 
           
+            <div class="site-state-item site-state-categories">
+              <a href="/categories">
+                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-name">categories</span>
+              </a>
+            </div>
+          
 
           
             <div class="site-state-item site-state-tags">
               <a href="/tags">
-                <span class="site-state-item-count">1</span>
+                <span class="site-state-item-count">2</span>
                 <span class="site-state-item-name">tags</span>
               </a>
             </div>
@@ -419,6 +640,15 @@
                 </a>
               </span>
             
+              <span class="links-of-author-item">
+                <a href="http://steamcommunity.com/profiles/76561198130801995" target="_blank" title="Steam">
+                  
+                    <i class="fa fa-fw fa-steam-square"></i>
+                  
+                  Steam
+                </a>
+              </span>
+            
           
         </div>
 
@@ -444,6 +674,17 @@
 
       </section>
 
+      
+        <section class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+            
+              
+            
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#Selection-Sort"><span class="nav-number">1.</span> <span class="nav-text">Selection Sort</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Insertion-Sort"><span class="nav-number">2.</span> <span class="nav-text">Insertion Sort</span></a></li><li class="nav-item nav-level-1"><a class="nav-link" href="#Binary-Search"><span class="nav-number">3.</span> <span class="nav-text">Binary Search</span></a></li></ol></div>
+            
+          </div>
+        </section>
       
 
     </div>
@@ -547,6 +788,10 @@
 
 
   
+  <script type="text/javascript" src="/js/src/scrollspy.js?v=5.0.1"></script>
+<script type="text/javascript" src="/js/src/post-details.js?v=5.0.1"></script>
+
+
 
   
 
@@ -563,9 +808,9 @@
 
     <script type="text/javascript">
       var disqus_shortname = 'firepanda415';
-      var disqus_identifier = 'tags/blog/index.html';
-      var disqus_title = "";
-      var disqus_url = '';
+      var disqus_identifier = '2016/08/26/SearchandSort/';
+      var disqus_title = "搜索与排序：Insertion and Selection Sort, and Binary Search";
+      var disqus_url = 'http://www.firepanda.xyz/2016/08/26/SearchandSort/';
 
       function run_disqus_script(disqus_script){
         var dsq = document.createElement('script');
@@ -576,6 +821,8 @@
       }
 
       run_disqus_script('count.js');
+      
+        run_disqus_script('embed.js');
       
     </script>
   
