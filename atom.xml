@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.firepanda.xyz/"/>
-  <updated>2016-08-26T07:30:02.392Z</updated>
+  <updated>2016-08-26T08:35:59.769Z</updated>
   <id>http://www.firepanda.xyz/</id>
   
   <author>
@@ -20,9 +20,10 @@
     <link href="http://www.firepanda.xyz/2016/08/26/SearchandSort/"/>
     <id>http://www.firepanda.xyz/2016/08/26/SearchandSort/</id>
     <published>2016-08-26T07:07:51.000Z</published>
-    <updated>2016-08-26T07:30:02.392Z</updated>
+    <updated>2016-08-26T08:35:59.769Z</updated>
     
-    <content type="html"><![CDATA[<p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.</p>
+    <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/%E5%A4%8F%E5%B0%94.jpg" alt=""></p>
+<p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.<br> <a id="more"></a> </p>
 <h1 id="Selection-Sort"><a href="#Selection-Sort" class="headerlink" title="Selection Sort"></a>Selection Sort</h1><p>当我们有一组乱序数字的时候，举例说<br>When we have an array of random number, for example</p>
 <pre><code>450 604 100 802 301 200
 [0] [1] [2] [3] [4] [5]
@@ -45,8 +46,7 @@
 
 100 200 301 450 604 802 |
 [0] [1] [2] [3] [4] [5] |
-</code></pre><h1 id="Insertion-Sort"><a href="#Insertion-Sort" class="headerlink" title="Insertion Sort"></a>Insertion Sort</h1> <a id="more"></a> 
-<p>这个方法里，我们把[0]位置的数字当作已经整理完的<br>In this method, we treat number in [0] as a sorted array</p>
+</code></pre><h1 id="Insertion-Sort"><a href="#Insertion-Sort" class="headerlink" title="Insertion Sort"></a>Insertion Sort</h1><p>这个方法里，我们把[0]位置的数字当作已经整理完的<br>In this method, we treat number in [0] as a sorted array</p>
 <pre><code>450 | 604 100 802 301 200
 [0] | [1] [2] [3] [4] [5]
 </code></pre><p>然后我们把[0]的数字和[1]的数字比较，[1]较小的话就插到[0]的前面<br>Then we compare numbers in [0] and in [1]. <strong><em>Insert</em></strong> the number in [1] if it is smaller</p>
@@ -82,30 +82,8 @@
     
     <summary type="html">
     
-      &lt;p&gt;作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式&lt;br&gt;As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.&lt;/p&gt;
-&lt;h1 id=&quot;Selection-Sort&quot;&gt;&lt;a href=&quot;#Selection-Sort&quot; class=&quot;headerlink&quot; title=&quot;Selection Sort&quot;&gt;&lt;/a&gt;Selection Sort&lt;/h1&gt;&lt;p&gt;当我们有一组乱序数字的时候，举例说&lt;br&gt;When we have an array of random number, for example&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;450 604 100 802 301 200
-[0] [1] [2] [3] [4] [5]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们先找到最小的数字100,然后把它和[0]的数字交换位置&lt;br&gt;Let’s find the smallest number first, which is 100, and then &lt;strong&gt;&lt;em&gt;swap&lt;/em&gt;&lt;/strong&gt; it with number in [0].&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;100 | 604 450 802 301 200
-[0] | [1] [2] [3] [4] [5]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;这样左边是已经排序好的数列，右边是还没有排序好的，我们用竖线隔开&lt;br&gt;In this case, we have a sorted array on the left and an unsorted array on the right. We use a line to mark this.&lt;/p&gt;
-&lt;p&gt;第二步，我们再从右边的数列里面找到最小的，和位置[1]的数字交换&lt;br&gt;Secondly, we find the minimum number from the array on the right and swap it with number in [1].&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;100 200 | 450 802 301 604
-[0] [1] | [2] [3] [4] [5]
-&lt;/code&gt;&lt;/pre&gt;&lt;p&gt;我们最后再不断重复这个步骤，直到全部整理完&lt;br&gt;Finally, we just repeat this step until there isn’t any element in the right array.&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;100 200 301 | 802 450 604
-[0] [1] [2] | [3] [4] [5]
-
-100 200 301 450 | 802 604
-[0] [1] [2] [3] | [4] [5]
-
-100 200 301 450 604 | 802
-[0] [1] [2] [3] [4] | [5]
-
-100 200 301 450 604 802 |
-[0] [1] [2] [3] [4] [5] |
-&lt;/code&gt;&lt;/pre&gt;&lt;h1 id=&quot;Insertion-Sort&quot;&gt;&lt;a href=&quot;#Insertion-Sort&quot; class=&quot;headerlink&quot; title=&quot;Insertion Sort&quot;&gt;&lt;/a&gt;Insertion Sort&lt;/h1&gt;
+      &lt;p&gt;&lt;img src=&quot;http://och38adjw.bkt.clouddn.com/%E5%A4%8F%E5%B0%94.jpg&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
+&lt;p&gt;作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式&lt;br&gt;As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.&lt;br&gt;
     
     </summary>
     
