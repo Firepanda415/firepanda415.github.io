@@ -19,7 +19,7 @@
     <entry>
       <title><![CDATA[搜索与排序：Insertion Sort, Selection Sort, and Binary Search]]></title>
       <url>http://www.firepanda.xyz/2016/08/26/SearchandSort/</url>
-      <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/%E5%A4%8F%E5%B0%94.jpg" alt=""></p>
+      <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/%E5%A4%8F%E5%B0%942.jpg" alt=""></p>
 <p>作为第一篇文章，主要是为了让我熟悉一下Markdown语法啦。本文主要讲两种排序方式以及一种搜索方式<br>As the first article of this blog, I just want to practice different syntax of Markdown. I will talk about two different sorting method and a way of searching.<br> <a id="more"></a> </p>
 <h1 id="Selection-Sort"><a href="#Selection-Sort" class="headerlink" title="Selection Sort"></a>Selection Sort</h1><p>当我们有一组乱序数字的时候，举例说<br>When we have an array of random number, for example</p>
 <pre><code>450 604 100 802 301 200
