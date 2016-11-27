@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://www.firepanda.xyz/"/>
-  <updated>2016-11-27T08:52:23.901Z</updated>
+  <updated>2016-11-27T09:00:39.257Z</updated>
   <id>http://www.firepanda.xyz/</id>
   
   <author>
@@ -20,11 +20,11 @@
     <link href="http://www.firepanda.xyz/2016/11/27/Some-words/"/>
     <id>http://www.firepanda.xyz/2016/11/27/Some-words/</id>
     <published>2016-11-27T07:38:34.000Z</published>
-    <updated>2016-11-27T08:52:23.901Z</updated>
+    <updated>2016-11-27T09:00:39.257Z</updated>
     
     <content type="html"><![CDATA[<p><img src="http://och38adjw.bkt.clouddn.com/Paul_Wolfskehl.jpg?imageView/2/w/400/q/100" alt=""></p>
-<p>不好意思本来雄心勃勃地想更新一些和image processing或者computational science有关的文章，但是还是没有什么时间写（也有点懒）。现在（美东2点半）想到了很多乱七八糟结果睡不着，写在pyq感觉太矫情了，就放在这个没有人看的地方吧</p>
-<p>感觉应该没有知道题图是Paul Wolfskehl吧，他是一个德国数学爱好者，准备自杀的时候发现Kummer的Fermat’s Last Theorem证明有误结果错过了计划的自杀时间就放弃自杀了。<br> <a id="more"></a> </p>
+<p>不好意思本来雄心勃勃地想更新一些和image processing或者computational science有关的文章，但是还是没有什么时间写（也有点懒）。现在（美东2点半）想到了很多乱七八糟结果睡不着，写在pyq感觉太矫情了，就放在这个没有人看的地方吧<br> <a id="more"></a> </p>
+<p>感觉应该没有知道题图是Paul Wolfskehl吧，他是一个德国数学爱好者，准备自杀的时候发现Kummer的Fermat’s Last Theorem证明有误结果错过了计划的自杀时间就放弃自杀了。</p>
 <p>一个人到美帝也到了第二年了，在这么一个工科学校读了数学和计算科学，放弃了career fair的选择等到11月底寻找REU。但明明到了时间了却感觉到了害怕。就像又回到了申请季，要写essay要找人写推荐信还要准备resume或者C.V.然而和申请季不一样的是这次没有十万元请来的美籍顾问帮我改语法和结构，也没有学校的升学指导让外教帮我写推荐信。所有的一切到要自己来，偏偏还上了这么一个每天忙到12点都是在写作业的学校。</p>
 <p>虽然说无论是GPA，还是同学间的评价还是拿到SSN的时间都能让人觉得我还是挺努力的，就算找一个水水的REU感觉没什么问题。但是不知道为什么还是非常害怕去尝试然后招致失败。奇怪的是，我高中时候一点也不这样，弄社团时候自己最相信的就是不断地失败，失败地越早越好，吸收经验，最后成功，而且事实上高中时候我最后也成功了。结果来了美国，反而对失败这个东西怕得要死。</p>
 <p>我自己一直有一个很奇怪的信仰，觉得存在这么一个神，在每次重要的抉择时候，总会给我一个意想不到的选择，或者一个利于我的结果。从小事比如说临行前的快递，到大事虽然有着很高的中考分数还是去了随便考结果录取的国际部，再到被学校开除（其实也就是两次携带手机，但理论上是要开除了）改为严重记过处分然后被一系列老师保下来的经历。高中时候我对这个神的看法是无论我的处境多差，神最后关头还是会让我有机会化解问题，只要我朝着好的对的方向努力。到了大学，神并没有走，但是我却觉得自己被各种负担压得喘不过气。</p>
@@ -38,8 +38,7 @@
     <summary type="html">
     
       &lt;p&gt;&lt;img src=&quot;http://och38adjw.bkt.clouddn.com/Paul_Wolfskehl.jpg?imageView/2/w/400/q/100&quot; alt=&quot;&quot;&gt;&lt;/p&gt;
-&lt;p&gt;不好意思本来雄心勃勃地想更新一些和image processing或者computational science有关的文章，但是还是没有什么时间写（也有点懒）。现在（美东2点半）想到了很多乱七八糟结果睡不着，写在pyq感觉太矫情了，就放在这个没有人看的地方吧&lt;/p&gt;
-&lt;p&gt;感觉应该没有知道题图是Paul Wolfskehl吧，他是一个德国数学爱好者，准备自杀的时候发现Kummer的Fermat’s Last Theorem证明有误结果错过了计划的自杀时间就放弃自杀了。&lt;br&gt;
+&lt;p&gt;不好意思本来雄心勃勃地想更新一些和image processing或者computational science有关的文章，但是还是没有什么时间写（也有点懒）。现在（美东2点半）想到了很多乱七八糟结果睡不着，写在pyq感觉太矫情了，就放在这个没有人看的地方吧&lt;br&gt;
     
     </summary>
     
